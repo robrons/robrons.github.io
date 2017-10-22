@@ -559,7 +559,8 @@ h3 {
 .thumb-container {
   max-width: 960px;
   margin: 0px auto;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  padding-left: 17px; }
   .thumb-container:after {
     content: "";
     display: table;
@@ -572,11 +573,7 @@ h3 {
     float: left;
     position: relative;
     padding-top: 5%;
-    overflow: hidden;
-    background-image: url(/assets/img/timeseries.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    overflow: hidden; }
     .thumb-container .thumb-unit .thumb-overlay {
       position: absolute;
       top: 0%;
@@ -624,3 +621,33 @@ h3 {
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
         line-height: 1.2; }
+  .thumb-container #neural {
+    background-image: url(/assets/img/imageclassifier.PNG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .thumb-container #self {
+    background-image: url(/assets/img/selfdrivingcar.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .thumb-container #planar {
+    background-image: url(/assets/img/planarclassification.PNG);
+    background-postion: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .thumb-container #financial {
+    background-image: url(/assets/img/timeseries.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .thumb-container #weather {
+    background-image: url(/assets/img/weatherApp.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .thumb-container #open {
+    background-image: url(/assets/img/dragon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }

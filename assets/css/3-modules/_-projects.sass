@@ -5,6 +5,8 @@
 	max-width: 960px
 	margin: 0px auto 
 	padding-bottom: 100px
+	padding-left: 17px
+
 	+clearfix
 
 	.thumb-unit
@@ -16,12 +18,6 @@
 		position: relative
 		padding-top: 5%
 		overflow: hidden
-
-		background: 
-			image: url(/assets/img/timeseries.jpg)
-			position: center center
-			repeat: no-repeat
-			size: cover
 
 		.thumb-overlay
 			+position(absolute, 0% 0px null 0px)
@@ -46,4 +42,49 @@
 
 		&:hover .thumb-overlay
 			@extend %animation
+
+	#neural 
+		background: 
+			image: url(/assets/img/imageclassifier.PNG)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+	#self 
+		background: 
+			image: url(/assets/img/selfdrivingcar.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+	#planar 
+		background: 
+			image: url(/assets/img/planarclassification.PNG)
+			postion: center center
+			repeat: no-repeat
+			size: cover
+
+	#financial 
+		background: 
+			image: url(/assets/img/timeseries.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+	#weather 
+		background: 
+			image: url(/assets/img/weatherApp.png)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+
+	#open 
+		background: 
+			image: url(/assets/img/dragon.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+
 
