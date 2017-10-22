@@ -13,9 +13,33 @@
 		background: pink
 		display: block
 		float: left
+		position: relative
+		padding-top: 5%
+		overflow: hidden
 
 		background: 
 			image: url(/assets/img/timeseries.jpg)
 			position: center center
 			repeat: no-repeat
 			size: cover
+
+		.thumb-overlay
+			+position(absolute, 100% 0px null 0px)
+			height: 100%
+			background: fade-out($accent-color, 0.5)
+			text-align: center
+			+transition
+
+			strong
+				display: block
+				color: white
+				text-transform: uppercase
+				padding: 50px
+				font-size: 24px
+				font-family: 'Open Sans', sans-serif
+				font-weight: 300
+
+
+		&:hover .thumb-overlay
+			+position(absolute, 0% 0px null 0px)
+

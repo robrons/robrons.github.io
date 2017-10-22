@@ -365,7 +365,34 @@ h3 {
     background: pink;
     display: block;
     float: left;
+    position: relative;
+    padding-top: 5%;
+    overflow: hidden;
     background-image: url(/assets/img/timeseries.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
+    .thumb-container .thumb-unit .thumb-overlay {
+      position: absolute;
+      top: 100%;
+      right: 0px;
+      left: 0px;
+      height: 100%;
+      background: rgba(225, 193, 132, 0.5);
+      text-align: center;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      .thumb-container .thumb-unit .thumb-overlay strong {
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        padding: 50px;
+        font-size: 24px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300; }
+    .thumb-container .thumb-unit:hover .thumb-overlay {
+      position: absolute;
+      top: 0%;
+      right: 0px;
+      left: 0px; }
