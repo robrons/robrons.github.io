@@ -364,7 +364,7 @@ td, th {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #E1C184;
+  color: #000000;
   font-weight: bold; }
 
 .gigantic {
@@ -410,12 +410,12 @@ hr {
   height: 0; }
 
 a {
-  color: #E1C184;
+  color: #000000;
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-  color: #f5ead6; }
+  color: #333333; }
 
 ::selection {
   background: #FFF498; }
@@ -457,7 +457,6 @@ h3 {
 
 header {
   height: 100vh;
-  background-image: url(../img/hero-bg.jpg) center center;
   background: url(../img/hero-bg.jpg) center center;
   background-size: cover;
   background-attachment: fixed; }
@@ -531,11 +530,15 @@ footer {
         font-size: 12px;
         color: rgba(0, 0, 0, 0.4); }
 
+.about-section {
+  height: 100vh; }
+
 h3 {
   font-size: 30px;
   text-align: center;
   padding: 50px 0 10px;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  margin: 0px; }
 
 .face-img {
   height: 200px;
@@ -552,14 +555,20 @@ h3 {
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
+  .blurb p {
+    margin-bottom: 0px;
+    padding-bottom: 20px; }
 
-.alt-section {
-  background-color: #E5EAEE; }
+.projects-section {
+  background: url(../img/project.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
 
 .thumb-container {
   max-width: 960px;
+  padding-top: 50px;
   margin: 0px auto;
-  padding-bottom: 100px;
   padding-left: 17px; }
   .thumb-container:after {
     content: "";
@@ -568,7 +577,8 @@ h3 {
   .thumb-container .thumb-unit {
     width: 33%;
     height: 150px;
-    background: pink;
+    border-radius: 25px;
+    margin: 1px;
     display: block;
     float: left;
     position: relative;
@@ -580,7 +590,7 @@ h3 {
       right: 0px;
       left: 0px;
       height: 100%;
-      background: rgba(225, 193, 132, 0.8);
+      background: rgba(0, 0, 0, 0.8);
       text-align: center;
       display: -webkit-box;
       display: -moz-box;
@@ -651,3 +661,12 @@ h3 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
+
+.research-section {
+  background: url(../img/research.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
+  .research-section .blurb {
+    color: white;
+    max-width: 920px; }
