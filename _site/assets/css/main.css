@@ -670,3 +670,38 @@ h3 {
   .research-section .blurb {
     color: white;
     max-width: 920px; }
+
+.contact-section {
+  background: #afe4f7; }
+  .contact-section .contact-container {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    margin: 0px auto; }
+    .contact-section .contact-container:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .contact-section .contact-container .contact-unit {
+      width: 25%;
+      height: 150px;
+      border-radius: 25px;
+      margin-left: 6.5%;
+      display: block;
+      float: left;
+      position: relative;
+      padding-top: 5%; }
+    .contact-section .contact-container #email {
+      background-image: url(/assets/img/email.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .contact-section .contact-container #linkedIn {
+      background-image: url(/assets/img/linkedin.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .contact-section .contact-container #gitHub {
+      background-image: url(/assets/img/git.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
