@@ -446,6 +446,9 @@ h3 {
   font-weight: 700;
   text-transform: uppercase; }
 
+a {
+  color: #5e9bff; }
+
 #particles-js {
   position: absolute;
   height: 100vh;
@@ -531,7 +534,7 @@ footer {
         color: rgba(0, 0, 0, 0.4); }
 
 .about-section {
-  height: 100vh; }
+  min-height: 100vh; }
 
 h3 {
   font-size: 30px;
@@ -563,7 +566,7 @@ h3 {
   background: url(../img/project.jpg) center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .thumb-container {
   max-width: 960px;
