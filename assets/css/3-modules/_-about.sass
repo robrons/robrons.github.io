@@ -1,24 +1,33 @@
+#particles-about
+  position: absolute
+  height: 103.5vh
+  width: 100%
+
 .about-section
+  z-index: 1
   min-height: 100vh
 
 h3
+  position: relative
   @extend %small-bold
   font-size: 30px
   text-align: center
-  padding: 50px 0 10px
+  padding: 40px 0 10px
   font-family: 'Open Sans', sans-serif
   margin: 0px
 
 .face-img
   +size(300px) 
+  position: relative
   border-radius: 50% 
   background: url(/assets/img/face.jpg) 0px center
   margin: 10px auto 
 
 .blurb
-  max-width: 620px
-  padding: 0 20px
-  margin: 50px auto
+  position: relative
+  max-width: 920px
+  padding: 0 10px
+  margin: 20px auto
   text-align: center
   font-size: 24px
   font-family: 'Open Sans', sans-serif
@@ -26,4 +35,4 @@ h3
 
   p
     margin-bottom: 0px
-    padding-bottom: 20px
+    padding-bottom: 0px
