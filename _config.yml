@@ -8,3 +8,4 @@ port: 7879
 sass:
   sass_dir: assets/css
   style: :nested
+theme: jekyll-theme-cayman
