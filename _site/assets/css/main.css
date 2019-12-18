@@ -147,16 +147,19 @@ td, th {
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans Light"), local("OpenSans-Light"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
+
 .thumb-container .thumb-unit:hover .thumb-overlay {
   -webkit-animation: animation 1000ms linear both;
   animation: animation 1000ms linear both; }
@@ -262,6 +265,7 @@ td, th {
     width: 100%;
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+
 @keyframes animation {
   0% {
     height: 0%;
@@ -362,6 +366,7 @@ td, th {
     width: 100%;
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
@@ -436,7 +441,7 @@ body {
   background: #FFFFFF;
   font-size: 14px;
   line-height: 1.6;
-  font-family: "Open Sans" sans-serif;
+  font-family: 'Open Sans' sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -539,6 +544,9 @@ footer {
   width: 100%; }
 
 .about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 1;
   min-height: 100vh; }
 
@@ -547,16 +555,18 @@ h3 {
   font-size: 30px;
   text-align: center;
   padding: 40px 0 10px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0px; }
 
 .face-img {
-  height: 300px;
+  width: 100%;
+  height: auto; }
+
+.circular-portrait {
   width: 300px;
-  position: relative;
-  border-radius: 50%;
-  background: url(/assets/img/face.jpg) 0px center;
-  margin: 10px auto; }
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%; }
 
 .blurb {
   position: relative;
@@ -565,7 +575,7 @@ h3 {
   margin: 20px auto;
   text-align: center;
   font-size: 24px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
   .blurb p {
     margin-bottom: 0px;
@@ -638,7 +648,7 @@ h3 {
         text-transform: uppercase;
         padding: 55px;
         font-size: 24px;
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         line-height: 1.2; }
   .thumb-container #neural {
@@ -723,3 +733,5 @@ h4 {
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */
