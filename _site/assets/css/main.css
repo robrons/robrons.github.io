@@ -566,7 +566,8 @@ h3 {
   width: 300px;
   height: 300px;
   overflow: hidden;
-  border-radius: 50%; }
+  border-radius: 50%;
+  z-index: 1; }
 
 .blurb {
   position: relative;
