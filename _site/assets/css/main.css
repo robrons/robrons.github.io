@@ -692,6 +692,8 @@ h3 {
   z-index: 1;
   min-height: 100vh; }
   .research-section .blurb {
+    display: flex;
+    flex-direction: column;
     position: relative;
     color: black;
     max-width: 920px;
@@ -734,5 +736,9 @@ h4 {
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover; }
+
+.work-section {
+  background: #fff6ed;
+  min-height: 100vh; }
 
 /*# sourceMappingURL=main.css.map */
